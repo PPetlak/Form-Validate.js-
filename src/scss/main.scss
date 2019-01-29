@@ -1,0 +1,374 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-title h1{
+    margin-top:95px;
+    font-weight: 900;
+    font-size: 45px;
+    margin-left:-5px;
+    span{
+        font-weight: 100;
+    }
+}
+.title2 h2{
+    margin-top:77px;
+    margin-left:-4px;
+    letter-spacing: -0.3px;
+    font-weight: 800;
+        font-size: 29px;
+}
+
+/* FORMULARZ*/
+.form-group{
+    #name{
+        margin-top:12px;
+        height: 74px;
+        margin-left:-18px;
+        width: 105%;
+      
+    }
+     ::-webkit-input-placeholder {
+        color:black;
+        padding-left:20px;
+        font-size: 18px;
+      }
+      #surname{
+          margin-top:12px;
+          height: 74px;
+          width: 105%;
+      }
+      #how-old{
+        margin-top:35px;
+        margin-left: 18px;
+        height: 74px;
+        width: 105%;
+       
+        }
+      select{
+          padding-left:30px;
+        }
+       #city{
+        margin-top:16px;
+        height: 74px;
+        margin-left:-18px;
+        width: 105%;
+           
+            }
+      #email{
+        margin-top:16px;
+        height: 74px;
+        width: 106%;
+        margin-left:6px;
+
+      }
+      
+}
+ .button-box{
+     margin-top:18px;
+     
+     button{
+         border-radius: 0;
+         height: 73px;
+         width:105%;
+         margin-left:-18px;
+         span{
+             font-size: 18px;
+         }
+     }
+ }
+
+ /* SLAJDER*/
+ .slider-box{
+     margin-top:95px;
+     
+     h2{
+        font-weight: 800;
+        font-size: 29px;
+        margin-left:-3px;
+     }
+     .slider{
+         margin-top:-6px;
+        .owl-carousel{
+            width: 109%;
+            margin-left:-4%;
+        } 
+        
+     }
+ }
+.slide1{
+    position: absolute;
+    z-index:-1;
+    
+    
+}
+.slide-1{
+    height: 400px;
+    h4{
+        padding-top:73%;
+        font-size: 18px;
+        margin-left: 19px;
+        font-weight: 600;
+       
+    }
+    p{
+        padding-left: 18px;
+        font-size: 18px;
+    }
+}
+ .owl-item > div> .slide1{
+    cursor: pointer;
+    width: 100%;
+    transition: all .8s ease-in-out;
+    transform: scale(1);
+    
+  }
+  .owl-item.center > div >.slide1{
+    cursor: auto;
+    margin-top:35px;
+    transform: scale(1.1);
+    
+
+  }
+  .owl-item.center > div >h4 p{
+   position: absolute;
+   padding-top:300px;
+
+  }
+ 
+  .owl-dots{
+    top:-35px;
+    right:2%;
+    text-align: center;
+    display: block;
+    position: absolute;
+   
+    
+  }
+  .owl-stage{
+    margin-left:33% !important;
+}
+  .owl-carousel .owl-dots .owl-dot.active span
+  {
+      background-color: #34d9a1;
+      width: 30px;
+      
+  }
+  .last-title h1{
+    margin-top:40px;
+    font-weight: 900;
+    font-size: 45px;
+    margin-left:-5px;
+    span{
+        font-weight: 100;
+    }
+}
+ 
+/* MEDIAQ*/
+ $desktop: "(max-width: 778px)";
+
+@media #{$desktop} {
+    .owl-stage{
+        margin-left:0% !important;
+    }
+    .form-box{
+        input{
+            height: 50px;
+        }
+        .select-box{
+            margin-top:20px;
+            margin-bottom: 30px;
+           height: 50px;
+        }
+    }
+
+    .form-group{
+        #name{
+            margin-top:12px;
+            height: 74px;
+            margin-left:-18px;
+            width: 105%;
+          
+        }
+         ::-webkit-input-placeholder {
+            color:black;
+            padding-left:20px;
+            font-size: 18px;
+          }
+          #surname{
+              margin-top:12px;
+              height: 74px;
+              width: 105%;
+              margin-left:-17px;
+          }
+          #how-old{
+            margin-top:40px;
+            margin-left: -17px;
+            height: 74px;
+            width: 105%;
+           
+            }
+          select{
+              padding-left:30px;
+            }
+           #city{
+            margin-top:20px;
+            height: 74px;
+            margin-left:-18px;
+            width: 105%;
+               
+                }
+          #email{
+            margin-top:35px;
+            height: 74px;
+            width: 106%;
+            margin-left: -20px;
+            
+    
+          }
+          
+    }
+
+.slide-1{
+    
+    h4{
+        padding-top:60%;
+        font-size: 18px;
+        margin-left: 13px;
+        font-weight: 600;
+       
+    }
+    p{
+        padding-left: 15px;
+        font-size: 18px;
+    }
+}
+.owl-item > div> .slide1{
+    cursor: pointer;
+    width: 100%;
+   
+    
+  }
+  .owl-item.center > div >.slide1{
+    cursor: auto;
+   
+    
+
+  }
+ 
+}
+
+/* STYLE WALIDACJI FORMULARZA*/
+
+.form-control:focus {
+    border:1px solid lightgrey;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+  }
+
+
+select.error,
+input.error {
+    border: red 2px solid;
+    background-size: 20px 20px;
+    background-image: url('/img/cross.png');
+    background-position:  right 5% center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+
+/* Input element having a valid value */
+select.valid,
+input.valid {
+    border: green 2px solid;
+    background-size: 20px 20px;
+    background-image: url('/img/check.png');
+    background-position: right 25px center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+
+/* File inputs with invalid value */
+input[type="file"].error {
+    color: yellow;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* File inputs with valid value */
+input[type="file"].valid {
+    color: #468847;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Element showing an inline error message */
+.form-error {
+    display: block;
+    color:white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 140%;
+}
+
+/* Element showing the help text declared in data-validation-help */
+span.help {
+    color: #999;
+    font-size: 90%;
+}
+
+/* Here you can style the look of the input while server being
+  requested when using data-validation="server" */
+select.async-validation,
+input.async-validation,
+select.validating-server-side, /* deprecated */
+input.validating-server-side /* deprecated */ {
+    opacity: 0.5;
+    background-image: url();
+    background-position:  right 5px center;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+/* Here you can style the entire form while server being
+  requested when using data-validation="server" */
+form.async-validation,
+form.validating-server-side /* deprecated */ {
+
+}
+
+/* Container for error messages when having configuration
+   parameter "errorMessagePosition" set to "top" */
+div.form-error {
+    background-color: #f2dede;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: yellow 1px solid;
+    border-radius: 4px;
+}
+
+/* Title in top of the error message container */
+div.form-error strong {
+    font-weight: bold;
+    display: block;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+/* Typography styling in the error message container */
+div.form-error strong,
+div.form-error ul li {
+    line-height: 140%;
+    color:yellow;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+div.form-error ul,
+div.form-error ul li {
+    background: none;
+}
